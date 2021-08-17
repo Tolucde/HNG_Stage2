@@ -9,6 +9,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    height: fit-content;
+}
+
 .main {
     padding: 10px 50px;
     font-size: 23px;

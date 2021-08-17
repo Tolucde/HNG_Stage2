@@ -7,26 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOLU RESUME</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link href="aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
     <section class="main">
-        <div class="mainText">
+        <div class="mainText" data-aos="slide-down" data-aos-duration="2000">
             <p>
                 My name is <span class="special">Tolu Philip</span>, a front end developer with strong knowledge on React and CSS, I believe I can be an invaluable member of your team. I am currently an intern at the ongoing <a href="www.team.zuri"> HNG8 internship </a>.
                 Below, is my resume
             </p>
         </div>
-        <div class="hngLogo">
+        <div class="hngLogo" data-aos="fade-right" data-aos-duration="1000">
             <a href="www.team.zuri">
                 <img src="assets/hngLogo.png" alt="hngLogo" />
             </a>
         </div>
     </section>
     <section class="resume">
-        <article class="left">
-            <div class="imageName">
+        <article class="left" data-aos="slide-right" data-aos-duration="1000">
+            <div class="imageName" data-aos="fade-up" data-aos-duration="2000">
                 <div class="image">
                     <img src="assets/tP.jpg" alt="tolu photo" />
                 </div>
@@ -66,8 +68,8 @@
                 </p>
             </div>
         </article>
-        <article class="right">
-            <div class="employ">
+        <article class="right" data-aos="slide-left" data-aos-duration="1000">
+            <div class="employ" data-aos="fade-up" data-aos-duration="3000">
                 <h4>EMPLOYMENT HISTORY</h4>
                 <div class="employContainer">
                     <h6>Frontend developer</h6>
@@ -112,6 +114,10 @@
             </div>
         </article>
     </section>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
 </body>
 
 </html>
